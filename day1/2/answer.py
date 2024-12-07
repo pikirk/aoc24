@@ -17,6 +17,6 @@ score = 0
 
 for i in range(len(left)): 
     target = left[i] 
-    score += ( sum(1 for n in right if n == target) ) * target
+    score += right.count(target) * target
 
 print (score)
